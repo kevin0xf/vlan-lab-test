@@ -1,0 +1,6 @@
+    3  sudo ip link add link lab2 name lab2.20 type vlan id 20
+    4  sudo ip link add link lab2 name lab2.30 type vlan id 30
+    5  sudo ip link set dev lab2.20 up
+    6  sudo ip link set dev lab2.30 up
+    7  sudo ip addr add 10.0.0.10/24 dev lab2.20
+    8  sudo ip addr add 10.0.1.10/24 dev lab2.30
